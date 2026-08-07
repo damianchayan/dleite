@@ -1,5 +1,3 @@
-import React from "react";
-
 // Definimos la interfaz para las Props en TypeScript
 interface WhatsappButtonProps {
   phoneNumber?: string; // Opcional: por si quieres quemar uno por defecto
@@ -8,7 +6,7 @@ interface WhatsappButtonProps {
 }
 
 export default function WhatsappButton({
-  phoneNumber = "34664236481", // Cambia esto por tu número por defecto
+  phoneNumber = "34694311193", // Cambia esto por tu número por defecto
   message = "Hola, me gustaría realizar una consulta.",
   text = "Contactar por WhatsApp",
 }: WhatsappButtonProps) {
