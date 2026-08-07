@@ -7,6 +7,8 @@
 @theme {
   --color-dleite: #254632;
   --color-dtext: #edaaa4;
+
+  --color-inst: #c13584;
 }
 @theme inline {
   --color-background: var(--background);

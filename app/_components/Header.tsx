@@ -4,7 +4,7 @@ import Dropdown from "./DropDownMenu";
 
 function Header() {
   const linkStyle =
-    "text-xl text-white hover:text-dtext font-bold  content-center tracking-wide transition-colors";
+    "text-lg text-white hover:text-dtext font-bold  content-center tracking-wide transition-colors md:xl";
 
   const featureLinks = [
     { label: "Tartas", targetId: "tartas" },
@@ -16,11 +16,10 @@ function Header() {
     <header className="fixed left-0 top-0 z-50 bg-dleite flex w-full justify-between gap-8 border-b border-green-900 min-h-15 ">
       <h1 className="text-lg font-semibold justify ">
         <Link
-          className="absolute w-24 h-24 rounded-full border-4 border-white object-cover shadow-md"
+          className="absolute w-24 h-24 rounded-full border-4 border-white object-cover shadow-md hover:border-dtext"
           href={"/"}
         >
           <Image
-            className=""
             loading="eager"
             src={"/icon.jpg"}
             alt="Logo icon if the web"
@@ -47,10 +46,6 @@ function Header() {
         />
         <Link className={linkStyle} href={"/about"}>
           About Us
-        </Link>
-
-        <Link className={linkStyle} href={"/contact"}>
-          Contact Us
         </Link>
       </div>
     </header>

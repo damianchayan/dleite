@@ -18,13 +18,13 @@ export default function WhatsappButton({
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#25D366] text-white font-semibold text-sm rounded-xl shadow-md hover:bg-[#20ba5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group w-full sm:w-auto"
+      className="inline-flex items-center justify-center  rounded-full w-15 h-15 gap-2  bg-[#25D366] text-white font-semibold text-sm md:rounded-xl shadow-md hover:bg-[#20ba5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 md:px-2 group  sm:w-auto "
     >
       {/* Icono de WhatsApp */}
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5 fill-current group-hover:scale-110 transition-transform duration-200"
+        className="w-10 h-10 fill-current group-hover:scale-110 transition-transform duration-200"
         viewBox="0 0 32 32"
         version="1.1"
       >
@@ -33,7 +33,7 @@ export default function WhatsappButton({
       </svg>
 
       {/* Texto del Botón */}
-      <span>{text}</span>
+      <span className="hidden md:inline">{text}</span>
     </a>
   );
 }

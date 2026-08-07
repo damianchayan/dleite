@@ -42,7 +42,7 @@ export default function Dropdown({ title, items, styles, id }: DropdownProps) {
         {title}
         {/* Optional: A small arrow that flips when open */}
         <svg
-          className={`inline w-4 h-4 transition-transform duration-200 ${
+          className={`hidden md:inline w-4 h-4 transition-transform duration-200 ${
             isOpen ? "rotate-180" : ""
           }`}
           fill="none"

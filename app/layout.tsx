@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
+import Socials from "./_components/Socials";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="mx-12 mt-25 md:mx-24 ">
           {/* className=" flex flex-col justify-center items-center" */}
           {children}
+          <Socials />
         </main>
       </body>
     </html>
