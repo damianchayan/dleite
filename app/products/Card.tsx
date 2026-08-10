@@ -8,8 +8,8 @@ interface CardProps {
 
 export default function Card({ title, description, price }: CardProps) {
   const cardStyle = ` flex flex-col justify-center items-center   rounded-xl border border-dtext shadow-lg b-dtext hover:-translate-y-1 hover:shadow-xl transition-all duration-300 max-w-90`;
-  const tituloTarjeta = "text-xl font-semibold text-dtext pt-3 ";
-  const desTarjeta = "text-black px-4 text-sm";
+  const tituloTarjeta = "text-xl font-semibold text-dtext py-3 ";
+  const desTarjeta = "text-black dark:text-white px-4 text-sm";
   const priceStyle = `font-extrabold text-white p-3`;
   return (
     <li className={cardStyle}>
