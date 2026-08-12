@@ -1,0 +1,193 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "products": "Productos",
+    "aboutUs": "Sobre Nosotros"
+  },
+  "UI": {
+    "greeting": "HOLLLLAAAAAAA",
+    "instagram": "Nuestro instagram",
+    "whatsapp": "Contactar por WhatsApp"
+  },
+  "Schedule": {
+    "title": "Nuestros Horarios",
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Cerrado"
+  },
+  "Menu": {
+    "tartas": {
+      "title": "Tartas",
+      "tartas_de_queso": {
+        "title": "Tartas de Queso",
+        "tradicional": {
+          "name": "Tradicional",
+          "desc": "Nuestra clásica tarta de queso horneada, extracremosa y con base de galleta artesanal."
+        },
+        "oreo": {
+          "name": "Oreo, Dino y cacahuete",
+          "desc": "Una explosión de sabor con galletas Oreo, Filipinos y un toque irresistible de crema de cacahuete."
+        },
+        "cabrona": {
+          "name": "Cabrona",
+          "desc": "Para los más atrevidos: tarta de queso intenso de cabra que no te dejará indiferente."
+        },
+        "kinder_lotus": {
+          "name": "Kinder bueno y Lotus",
+          "desc": "La combinación perfecta entre el dulzor del Kinder y el toque caramelizado de la galleta Lotus."
+        },
+        "pistacho": {
+          "name": "Pistacho",
+          "desc": "Elaborada con auténtica crema de pistacho tostado 100% natural. Un lujo para el paladar."
+        }
+      },
+      "tartas_de_corte": {
+        "title": "Tartas de Corte",
+        "fresas": {
+          "name": "Fresas con Nata",
+          "desc": "Bizcocho esponjoso calado en almíbar, relleno de nata montada fresca y fresas de temporada."
+        },
+        "frutas": {
+          "name": "Frutas variadas",
+          "desc": "Un clásico refrescante y colorido, coronado con una selección de las mejores frutas frescas."
+        },
+        "ferrero_kinder": {
+          "name": "Ferrero o Kinder",
+          "desc": "Para los amantes del chocolate: elige entre la intensidad de avellana del Ferrero o la suavidad del Kinder."
+        },
+        "pistacho": {
+          "name": "Pistacho",
+          "desc": "Capas de bizcocho suave intercaladas con una intensa y sedosa crema de pistacho."
+        },
+        "red_velvet": {
+          "name": "Red velvet",
+          "desc": "El icónico bizcocho aterciopelado de cacao rojo, contrastado con nuestro suave frosting de queso crema."
+        },
+        "carrot_cake": {
+          "name": "Carrot cake",
+          "desc": "Bizcocho húmedo de zanahoria, especias cálidas, nueces picadas y una cobertura generosa de frosting de queso."
+        }
+      },
+      "tarta_semifria": {
+        "title": "Tarta Semifría",
+        "tres_chocolates": {
+          "name": "Tres Chocolates",
+          "desc": "Tres capas perfectamente definidas de chocolate negro, con leche y blanco sobre base crujiente."
+        },
+        "semifrio_mix": {
+          "name": "Semifrío kinder, oreo o lotus",
+          "desc": "Textura tipo mousse helada, a elegir con tus chocolatinas o galletas favoritas. Ideal para refrescar."
+        },
+        "semifrio_pistacho": {
+          "name": "Semifrío de Pistacho",
+          "desc": "La versión más ligera y fresca de nuestro postre estrella, con todo el sabor del pistacho natural."
+        }
+      },
+      "tartaletas": {
+        "title": "Tartaletas",
+        "lemon_pie": {
+          "name": "Lemon pie",
+          "desc": "Masa quebrada crujiente rellena de una ácida crema de limón y coronada con merengue italiano tostado."
+        },
+        "frutos_rojos": {
+          "name": "Frutos rojos",
+          "desc": "Base de masa dulce con crema pastelera suave y una corona rebosante de frutos del bosque frescos."
+        },
+        "choco_naranja": {
+          "name": "Choco-naranja",
+          "desc": "La clásica y elegante combinación de ganache de chocolate negro intenso con mermelada de naranja amarga."
+        },
+        "banoffee": {
+          "name": "Banoffee",
+          "desc": "Base de galleta triturada, dulce de leche, rodajas de plátano fresco y abundante nata montada."
+        }
+      }
+    },
+    "empanadas": {
+      "title": "Empanadas",
+      "nuestras_empanadas": {
+        "title": "Nuestras Empanadas",
+        "atun": {
+          "name": "Atún",
+          "desc": "Elaborada con atún de primera calidad, pimientos asados y sofrito casero. *Opción disponible con masa de maíz."
+        },
+        "carne": {
+          "name": "Carne",
+          "desc": "Relleno jugoso de carne picada estofada a fuego lento con especias tradicionales. *Opción disponible con masa de maíz."
+        },
+        "mejillon": {
+          "name": "Mejillón",
+          "desc": "Sabor a mar en cada bocado, con mejillones seleccionados y un sofrito con un toque de pimentón. *Opción disponible con masa de maíz."
+        },
+        "setas": {
+          "name": "Setas",
+          "desc": "Una opción vegetariana deliciosa con una mezcla de setas de temporada y cebolla pochada. *Opción disponible con masa de maíz."
+        }
+      }
+    },
+    "otros": {
+      "title": "Otros",
+      "quiche": {
+        "title": "Quiche Lorraine",
+        "salmon": {
+          "name": "Salmón con queso de cabra",
+          "desc": "Tarta salada francesa con crema, huevos, trozos de salmón ahumado y medallones de queso de cabra."
+        },
+        "bacon": {
+          "name": "Bacon con queso",
+          "desc": "La receta original de quiche con panceta ahumada crujiente y abundante queso fundido."
+        }
+      },
+      "dulces": {
+        "title": "Dulces y Postres",
+        "rosca": {
+          "name": "Rosca/Larpeira",
+          "desc": "Masa dulce y esponjosa, empapada en un almíbar ligero y decorada con crema y azúcar escarchado."
+        },
+        "flan": {
+          "name": "Flan Parisien",
+          "desc": "Tarta de crema pastelera horneada sobre hojaldre, con una costra tostada y un interior denso y vainillado."
+        },
+        "milhojas": {
+          "name": "Milhojas Individuales",
+          "desc": "Capas crujientes y caramelizadas de hojaldre intercaladas con nuestra mejor crema pastelera."
+        },
+        "canitas": {
+          "name": "Cañitas Rellenas",
+          "desc": "Tradicional masa frita crujiente en forma de tubo, rellena al momento de crema o nata."
+        }
+      },
+      "brownie": {
+        "title": "Brownie",
+        "tradicional": {
+          "name": "Brownie Tradicional",
+          "desc": "Denso, oscuro y lleno de chocolate por dentro, con esa característica capa crujiente por fuera. (Topping a elegir por 3€ extra)."
+        },
+        "nutella": {
+          "name": "Brownie Nutella",
+          "desc": "Nuestro brownie clásico, elevado a otro nivel con un núcleo fundido de Nutella. (Topping a elegir por 3€ extra)."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "tiernitas": {
+          "name": "Tiernitas (6 unid)",
+          "desc": "Pack de galletas suaves y abizcochadas, perfectas para mojar en la leche."
+        },
+        "pepitas": {
+          "name": "Cookie pepitas de chocolate",
+          "desc": "La clásica galleta americana: bordes crujientes, centro tierno y grandes pepitas de chocolate."
+        },
+        "rellenas": {
+          "name": "Cookies rellenas",
+          "desc": "Galletas de tamaño XL con un corazón líquido y sorprendente que se funde en la boca."
+        }
+      }
+    }
+  }
+}

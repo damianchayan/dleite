@@ -1,0 +1,193 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "products": "Produtos",
+    "aboutUs": "Sobre Nós"
+  },
+  "UI": {
+    "greeting": "HOLLLLAAAAAAA",
+    "instagram": "O noso Instagram",
+    "whatsapp": "Contactar por WhatsApp"
+  },
+  "Schedule": {
+    "title": "Os Nosos Horarios",
+    "monday": "Luns",
+    "tuesday": "Martes",
+    "wednesday": "Mércores",
+    "thursday": "Xoves",
+    "friday": "Venres",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Pechado"
+  },
+  "Menu": {
+    "tartas": {
+      "title": "Tartas",
+      "tartas_de_queso": {
+        "title": "Tartas de Queixo",
+        "tradicional": {
+          "name": "Tradicional",
+          "desc": "A nosa clásica tarta de queixo enfornada, extracremosa e con base de galleta artesanal."
+        },
+        "oreo": {
+          "name": "Oreo, Dino e cacahuete",
+          "desc": "Unha explosión de sabor con galletas Oreo, Filipinos e un toque irresistible de crema de cacahuete."
+        },
+        "cabrona": {
+          "name": "Cabrona",
+          "desc": "Para os máis atrevidos: tarta de queixo intenso de cabra que non te deixará indiferente."
+        },
+        "kinder_lotus": {
+          "name": "Kinder bueno e Lotus",
+          "desc": "A combinación perfecta entre o doce do Kinder e o toque caramelizado da galleta Lotus."
+        },
+        "pistacho": {
+          "name": "Pistacho",
+          "desc": "Elaborada con auténtica crema de pistacho tostado 100% natural. Un luxo para o padal."
+        }
+      },
+      "tartas_de_corte": {
+        "title": "Tartas de Corte",
+        "fresas": {
+          "name": "Amorodos con Nata",
+          "desc": "Biscoito esponxoso calado en xarope, recheo de nata montada fresca e amorodos de tempada."
+        },
+        "frutas": {
+          "name": "Froitas variadas",
+          "desc": "Un clásico refrescante e colorido, coroado cunha selección das mellores froitas frescas."
+        },
+        "ferrero_kinder": {
+          "name": "Ferrero ou Kinder",
+          "desc": "Para os amantes do chocolate: elixe entre a intensidade de abelá do Ferrero ou a suavidade do Kinder."
+        },
+        "pistacho": {
+          "name": "Pistacho",
+          "desc": "Capas de biscoito suave intercaladas cunha intensa e sedosa crema de pistacho."
+        },
+        "red_velvet": {
+          "name": "Red velvet",
+          "desc": "O icónico biscoito aveludado de cacao vermello, contrastado co noso suave frosting de queixo crema."
+        },
+        "carrot_cake": {
+          "name": "Carrot cake",
+          "desc": "Biscoito húmido de cenoria, especias cálidas, noces picadas e unha cobertura xenerosa de frosting de queixo."
+        }
+      },
+      "tarta_semifria": {
+        "title": "Tarta Semifría",
+        "tres_chocolates": {
+          "name": "Tres Chocolates",
+          "desc": "Tres capas perfectamente definidas de chocolate negro, con leite e branco sobre base crocante."
+        },
+        "semifrio_mix": {
+          "name": "Semifrío kinder, oreo ou lotus",
+          "desc": "Textura tipo mousse xeada, a elixir coas túas chocoatinas ou galletas favoritas. Ideal para refrescar."
+        },
+        "semifrio_pistacho": {
+          "name": "Semifrío de Pistacho",
+          "desc": "A versión máis lixeira e fresca da nosa sobremesa estrela, con todo o sabor do pistacho natural."
+        }
+      },
+      "tartaletas": {
+        "title": "Tartaletas",
+        "lemon_pie": {
+          "name": "Lemon pie",
+          "desc": "Masa crebada crocante rechea dunha aceda crema de limón e coroada con merengue italiano tostado."
+        },
+        "frutos_rojos": {
+          "name": "Froitos vermellos",
+          "desc": "Base de masa doce con crema pasteleira suave e unha coroa chea de froitos do bosque frescos."
+        },
+        "choco_naranja": {
+          "name": "Choco-laranxa",
+          "desc": "A clásica e elegante combinación de ganache de chocolate negro intenso con marmelada de laranxa amarga."
+        },
+        "banoffee": {
+          "name": "Banoffee",
+          "desc": "Base de galleta triturada, doce de leite, toros de plátano fresco e abundante nata montada."
+        }
+      }
+    },
+    "empanadas": {
+      "title": "Empanadas",
+      "nuestras_empanadas": {
+        "title": "As Nosas Empanadas",
+        "atun": {
+          "name": "Atún",
+          "desc": "Elaborada con atún de primeira calidade, pementos asados e rustrido caseiro. *Opción dispoñible con masa de millo."
+        },
+        "carne": {
+          "name": "Carne",
+          "desc": "Recheo suculento de carne picada estufada a fogo lento con especias tradicionais. *Opción dispoñible con masa de millo."
+        },
+        "mejillon": {
+          "name": "Mexillón",
+          "desc": "Sabor a mar en cada bocado, con mexillóns seleccionados e un rustrido cun toque de pemento doce. *Opción dispoñible con masa de millo."
+        },
+        "setas": {
+          "name": "Cogomelos",
+          "desc": "Unha opción vexetariana deliciosa cunha mestura de cogomelos de tempada e cebola pechada. *Opción dispoñible con masa de millo."
+        }
+      }
+    },
+    "otros": {
+      "title": "Outros",
+      "quiche": {
+        "title": "Quiche Lorraine",
+        "salmon": {
+          "name": "Salmón con queixo de cabra",
+          "desc": "Tarta salgada francesa con crema, ovos, anacos de salmón afumado e medallóns de queixo de cabra."
+        },
+        "bacon": {
+          "name": "Bacon con queixo",
+          "desc": "A receita orixinal de quiche con touciño entrefebrado afumado crocante e abundante queixo fundido."
+        }
+      },
+      "dulces": {
+        "title": "Doces e Sobremesas",
+        "rosca": {
+          "name": "Rosca/Larpeira",
+          "desc": "Masa doce e esponxosa, empapada nun xarope lixeiro e decorada con crema e azucre escarchado."
+        },
+        "flan": {
+          "name": "Flan Parisien",
+          "desc": "Tarta de crema pasteleira enfornada sobre follado, cunha codia tostada e un interior denso e vainillado."
+        },
+        "milhojas": {
+          "name": "Milfollas Individuais",
+          "desc": "Capas crocantes e caramelizadas de follado intercaladas coa nosa mellor crema pasteleira."
+        },
+        "canitas": {
+          "name": "Caniñas Recheas",
+          "desc": "Tradicional masa fritida crocante en forma de tubo, rechea ao momento de crema ou nata."
+        }
+      },
+      "brownie": {
+        "title": "Brownie",
+        "tradicional": {
+          "name": "Brownie Tradicional",
+          "desc": "Denso, escuro e cheo de chocolate por dentro, con esa característica capa crocante por fóra. (Topping a elixir por 3€ extra)."
+        },
+        "nutella": {
+          "name": "Brownie Nutella",
+          "desc": "O noso brownie clásico, elevado a outro nivel cun núcleo fundido de Nutella. (Topping a elixir por 3€ extra)."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "tiernitas": {
+          "name": "Tenras (6 unid)",
+          "desc": "Pack de galletas suaves, perfectas para mollar no leite."
+        },
+        "pepitas": {
+          "name": "Cookie pebidas de chocolate",
+          "desc": "A clásica galleta americana: bordos crocantes, centro tenro e grandes pebidas de chocolate."
+        },
+        "rellenas": {
+          "name": "Cookies recheas",
+          "desc": "Galletas de tamaño XL cun corazón líquido e sorprendente que se funde na boca."
+        }
+      }
+    }
+  }
+}

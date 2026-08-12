@@ -1,0 +1,193 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "aboutUs": "About Us"
+  },
+  "UI": {
+    "greeting": "HELLLLOOOOOOO",
+    "instagram": "Our Instagram",
+    "whatsapp": "Contact via WhatsApp"
+  },
+  "Schedule": {
+    "title": "Our Hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "Menu": {
+    "tartas": {
+      "title": "Cakes",
+      "tartas_de_queso": {
+        "title": "Cheesecakes",
+        "tradicional": {
+          "name": "Traditional",
+          "desc": "Our classic baked cheesecake, extra creamy with an artisanal cookie base."
+        },
+        "oreo": {
+          "name": "Oreo, Dino and Peanut",
+          "desc": "An explosion of flavor with Oreo cookies, Filipinos, and an irresistible touch of peanut butter."
+        },
+        "cabrona": {
+          "name": "Cabrona",
+          "desc": "For the daring: intense goat cheese cake that won't leave you indifferent."
+        },
+        "kinder_lotus": {
+          "name": "Kinder Bueno & Lotus",
+          "desc": "The perfect combination of sweet Kinder and the caramelized touch of Lotus cookies."
+        },
+        "pistacho": {
+          "name": "Pistachio",
+          "desc": "Made with authentic 100% natural roasted pistachio cream. A luxury for the palate."
+        }
+      },
+      "tartas_de_corte": {
+        "title": "Layer Cakes",
+        "fresas": {
+          "name": "Strawberries & Cream",
+          "desc": "Spongy cake soaked in syrup, filled with fresh whipped cream and seasonal strawberries."
+        },
+        "frutas": {
+          "name": "Mixed Fruits",
+          "desc": "A refreshing and colorful classic, crowned with a selection of the best fresh fruits."
+        },
+        "ferrero_kinder": {
+          "name": "Ferrero or Kinder",
+          "desc": "For chocolate lovers: choose between the hazelnut intensity of Ferrero or the smoothness of Kinder."
+        },
+        "pistacho": {
+          "name": "Pistachio",
+          "desc": "Soft cake layers interspersed with an intense and silky pistachio cream."
+        },
+        "red_velvet": {
+          "name": "Red Velvet",
+          "desc": "The iconic red velvet cocoa cake, contrasted with our smooth cream cheese frosting."
+        },
+        "carrot_cake": {
+          "name": "Carrot Cake",
+          "desc": "Moist carrot cake, warm spices, chopped walnuts, and a generous layer of cream cheese frosting."
+        }
+      },
+      "tarta_semifria": {
+        "title": "Semifreddo Cakes",
+        "tres_chocolates": {
+          "name": "Three Chocolates",
+          "desc": "Three perfectly defined layers of dark, milk, and white chocolate on a crunchy base."
+        },
+        "semifrio_mix": {
+          "name": "Kinder, Oreo or Lotus Semifreddo",
+          "desc": "Ice-cream mousse texture, choose your favorite chocolates or cookies. Ideal for refreshing."
+        },
+        "semifrio_pistacho": {
+          "name": "Pistachio Semifreddo",
+          "desc": "The lightest and freshest version of our signature dessert, with all the flavor of natural pistachio."
+        }
+      },
+      "tartaletas": {
+        "title": "Tarts",
+        "lemon_pie": {
+          "name": "Lemon Pie",
+          "desc": "Crunchy shortcrust pastry filled with a tart lemon cream and topped with toasted Italian meringue."
+        },
+        "frutos_rojos": {
+          "name": "Red Berries",
+          "desc": "Sweet pastry base with smooth pastry cream and a crown overflowing with fresh forest berries."
+        },
+        "choco_naranja": {
+          "name": "Choco-Orange",
+          "desc": "The classic and elegant combination of intense dark chocolate ganache with bitter orange marmalade."
+        },
+        "banoffee": {
+          "name": "Banoffee",
+          "desc": "Crushed cookie base, dulce de leche, fresh banana slices, and abundant whipped cream."
+        }
+      }
+    },
+    "empanadas": {
+      "title": "Empanadas",
+      "nuestras_empanadas": {
+        "title": "Our Empanadas",
+        "atun": {
+          "name": "Tuna",
+          "desc": "Made with premium tuna, roasted peppers, and a homemade base. *Available with corn dough."
+        },
+        "carne": {
+          "name": "Meat",
+          "desc": "Juicy minced meat filling slow-stewed with traditional spices. *Available with corn dough."
+        },
+        "mejillon": {
+          "name": "Mussel",
+          "desc": "A taste of the sea in every bite, with selected mussels and a touch of paprika. *Available with corn dough."
+        },
+        "setas": {
+          "name": "Mushrooms",
+          "desc": "A delicious vegetarian option with a mix of seasonal mushrooms and poached onion. *Available with corn dough."
+        }
+      }
+    },
+    "otros": {
+      "title": "Others",
+      "quiche": {
+        "title": "Quiche Lorraine",
+        "salmon": {
+          "name": "Salmon with Goat Cheese",
+          "desc": "French savory tart with cream, eggs, smoked salmon pieces, and goat cheese medallions."
+        },
+        "bacon": {
+          "name": "Bacon and Cheese",
+          "desc": "The original quiche recipe with crispy smoked bacon and abundant melted cheese."
+        }
+      },
+      "dulces": {
+        "title": "Sweets and Desserts",
+        "rosca": {
+          "name": "Rosca/Larpeira",
+          "desc": "Sweet and spongy dough, soaked in light syrup and decorated with cream and frosted sugar."
+        },
+        "flan": {
+          "name": "Flan Parisien",
+          "desc": "Baked pastry cream tart on puff pastry, with a toasted crust and a dense, vanilla interior."
+        },
+        "milhojas": {
+          "name": "Individual Mille-feuille",
+          "desc": "Crunchy, caramelized layers of puff pastry interspersed with our best pastry cream."
+        },
+        "canitas": {
+          "name": "Cream-filled Cañitas",
+          "desc": "Traditional crispy fried tube-shaped pastry, filled to order with pastry cream or whipped cream."
+        }
+      },
+      "brownie": {
+        "title": "Brownies",
+        "tradicional": {
+          "name": "Traditional Brownie",
+          "desc": "Dense, dark, and full of chocolate inside, with that characteristic crispy layer outside. (Choice of topping for €3 extra)."
+        },
+        "nutella": {
+          "name": "Nutella Brownie",
+          "desc": "Our classic brownie, taken to another level with a melted Nutella core. (Choice of topping for €3 extra)."
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "tiernitas": {
+          "name": "Softies (6 units)",
+          "desc": "Pack of soft, cake-like cookies, perfect for dunking in milk."
+        },
+        "pepitas": {
+          "name": "Chocolate Chip Cookie",
+          "desc": "The classic American cookie: crispy edges, tender center, and large chocolate chips."
+        },
+        "rellenas": {
+          "name": "Stuffed Cookies",
+          "desc": "XL sized cookies with a surprising liquid heart that melts in your mouth."
+        }
+      }
+    }
+  }
+}
