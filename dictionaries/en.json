@@ -7,7 +7,10 @@
   "UI": {
     "greeting": "HELLLLOOOOOOO",
     "instagram": "Our Instagram",
-    "whatsapp": "Contact via WhatsApp"
+    "whatsapp": "Contact via WhatsApp",
+    "cookie": "We use cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline"
   },
   "Schedule": {
     "title": "Our Hours",
@@ -18,7 +21,9 @@
     "friday": "Friday",
     "saturday": "Saturday",
     "sunday": "Sunday",
-    "closed": "Closed"
+    "closed": "Closed",
+    "type": "Summer Schedule (July & August)",
+    "special": "August 11th - August 15th"
   },
   "Menu": {
     "tartas": {

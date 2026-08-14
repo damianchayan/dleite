@@ -3,14 +3,25 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Dictionary } from "@/lib/getDictionaries";
+import { getLocalizedRoute } from "@/config/routes";
 
 interface MobileMenuProps {
   featureLinks: { label: string; targetId: string }[];
+  dict: Dictionary;
+  locale: "en" | "es" | "gl";
 }
 
-export default function MobileMenu({ featureLinks }: MobileMenuProps) {
+export default function MobileMenu({
+  featureLinks,
+  dict,
+  locale,
+}: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+
+  // 1. Obtenemos la ruta base traducida de los productos (ej: "/es/products")
+  const targetPath = getLocalizedRoute(locale, "products");
 
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -18,17 +29,18 @@ export default function MobileMenu({ featureLinks }: MobileMenuProps) {
   ) => {
     setIsOpen(false);
 
-    if (pathname === `/products`) {
+    // 2. Comparamos contra la ruta traducida, no contra la estática
+    if (pathname === targetPath) {
       e.preventDefault();
 
       const cleanHash = targetId.replace("#", "");
-
       const element = document.getElementById(cleanHash);
+
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
 
-        // Force the URL to be perfectly clean in the browser history
-        window.history.replaceState(null, "", `/products#${cleanHash}`);
+        // 3. Actualizamos la URL usando la ruta traducida
+        window.history.replaceState(null, "", `${targetPath}#${cleanHash}`);
       }
     }
   };
@@ -71,22 +83,27 @@ export default function MobileMenu({ featureLinks }: MobileMenuProps) {
         }`}
       >
         <Link
-          href="/"
+          href={`/${locale}`}
           onClick={() => setIsOpen(false)}
           className="text-white text-lg font-bold py-2"
         >
-          Home
+          {dict.Navigation.home}
         </Link>
 
-        <Link href={"/products"} className="text-white text-lg font-bold py-2">
-          Products
+        <Link
+          href={targetPath}
+          onClick={() => setIsOpen(false)}
+          className="text-white text-lg font-bold py-2"
+        >
+          {dict.Navigation.products}
         </Link>
 
-        <div className="flex flex-col -mt-2 pl-6  gap-0.5">
+        <div className="flex flex-col -mt-2 pl-6 gap-0.5">
           {featureLinks.map((link) => (
             <Link
               key={link.targetId}
-              href={`/products#${link.targetId}`}
+              // 5. Construimos el href dinámico con la ruta traducida y el hash
+              href={`${targetPath}#${link.targetId.replace("#", "")}`}
               onClick={(e) => handleScroll(e, link.targetId)}
               className="text-white/80 hover:text-white text-sm py-1 "
             >
@@ -94,12 +111,13 @@ export default function MobileMenu({ featureLinks }: MobileMenuProps) {
             </Link>
           ))}
         </div>
+
         <Link
-          href="/about"
+          href={getLocalizedRoute(locale, "about")}
           onClick={() => setIsOpen(false)}
           className="text-white text-lg font-bold py-2"
         >
-          About Us
+          {dict.Navigation.aboutUs}
         </Link>
       </div>
     </div>

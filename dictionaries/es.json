@@ -7,7 +7,10 @@
   "UI": {
     "greeting": "HOLLLLAAAAAAA",
     "instagram": "Nuestro instagram",
-    "whatsapp": "Contactar por WhatsApp"
+    "whatsapp": "Contactar por WhatsApp",
+    "cookie": "Usamos cookies para mejorar tu experiencia de usuario.",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
   },
   "Schedule": {
     "title": "Nuestros Horarios",
@@ -18,7 +21,9 @@
     "friday": "Viernes",
     "saturday": "Sábado",
     "sunday": "Domingo",
-    "closed": "Cerrado"
+    "closed": "Cerrado",
+    "type": "Horario de Verano (Julio y Agosto)",
+    "special": "Semana del 11 al 15 de agosto:"
   },
   "Menu": {
     "tartas": {

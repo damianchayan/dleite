@@ -2,15 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./DropDownMenu";
 import MobileMenu from "./MobileMenu";
+import { Dictionary } from "@/lib/getDictionaries";
+import { formatId } from "@/lib/formatters";
+import { getLocalizedRoute } from "@/config/routes";
 
-function Header() {
+interface HeaderProps {
+  dict: Dictionary;
+  locale: "en" | "es" | "gl"; // Aquí recibimos el diccionario desde el RootLayout
+}
+
+function Header({ dict, locale }: HeaderProps) {
   const linkStyle =
     "text-md md:text-lg text-white hover:text-dtext font-bold  content-center tracking-wide transition-colors md:xl";
 
   const featureLinks = [
-    { label: "Tartas", targetId: "tartas" },
-    { label: "Empanadas", targetId: "empanadas" },
-    { label: "Otros", targetId: "otros" },
+    {
+      label: dict.Menu.tartas.title,
+      targetId: formatId(dict.Menu.tartas.title),
+    },
+    {
+      label: dict.Menu.empanadas.title,
+      targetId: formatId(dict.Menu.empanadas.title),
+    },
+    { label: dict.Menu.otros.title, targetId: formatId(dict.Menu.otros.title) },
   ];
 
   return (
@@ -18,7 +32,7 @@ function Header() {
       <h1 className="text-lg font-semibold justify ">
         <Link
           className="absolute w-24 h-24 rounded-full overflow-visible border-4 border-white object-cover shadow-md hover:border-dtext"
-          href={"/"}
+          href={`/${locale}`}
         >
           <Image
             className="rounded-full "
@@ -31,20 +45,20 @@ function Header() {
         </Link>
       </h1>
       <div className="hidden md:flex gap-5 content-center  justify-end  px-5 md:px-20 transition-all">
-        <Link className={linkStyle} href={"/"}>
-          Home
+        <Link className={linkStyle} href={getLocalizedRoute(locale, "home")}>
+          {dict.Navigation.home}
         </Link>
         <Dropdown
-          id="products"
-          title="Products"
+          id={formatId(dict.Navigation.products)}
+          title={dict.Navigation.products}
           items={featureLinks}
           styles={linkStyle}
         />
-        <Link className={linkStyle} href={"/about"}>
-          About Us
+        <Link className={linkStyle} href={getLocalizedRoute(locale, "about")}>
+          {dict.Navigation.aboutUs}
         </Link>
       </div>
-      <MobileMenu featureLinks={featureLinks} />
+      <MobileMenu featureLinks={featureLinks} dict={dict} locale={locale} />
     </header>
   );
 }

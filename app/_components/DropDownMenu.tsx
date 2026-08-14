@@ -11,7 +11,7 @@ interface DropdownItem {
 
 interface DropdownProps {
   title: string;
-  id: string; // e.g., "products"
+  id: string; // ej: "products"
   items: DropdownItem[];
   styles?: string;
 }
@@ -19,9 +19,17 @@ interface DropdownProps {
 export default function Dropdown({ title, items, styles, id }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Ahora devuelve cosas como "/es/products" o "/gl"
 
-  // Close dropdown when clicking outside of it
+  // 1. Extraemos el idioma actual de la ruta (si existe)
+  const pathSegments = pathname.split("/").filter(Boolean);
+  const supportedLocales = ["en", "es", "gl"];
+  const currentLocale = supportedLocales.includes(pathSegments[0])
+    ? `/${pathSegments[0]}`
+    : "";
+
+  const targetPath = `${currentLocale}/${id}`;
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -44,17 +52,17 @@ export default function Dropdown({ title, items, styles, id }: DropdownProps) {
   ) => {
     setIsOpen(false);
 
-    if (pathname === `/${id}`) {
+    if (pathname === targetPath) {
       e.preventDefault();
 
       const cleanHash = targetId.replace("#", "");
-
       const element = document.getElementById(cleanHash);
+
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
 
         // Force the URL to be perfectly clean in the browser history
-        window.history.replaceState(null, "", `/${id}#${cleanHash}`);
+        window.history.replaceState(null, "", `${targetPath}#${cleanHash}`);
       }
     }
   };
@@ -88,13 +96,12 @@ export default function Dropdown({ title, items, styles, id }: DropdownProps) {
       {isOpen && (
         <div className="absolute left-0 z-50 flex flex-col py-2 mt-1 bg-white border border-gray-100 rounded-lg shadow-lg min-w-40 top-full">
           {items.map((item) => {
-            // Guarantee the fallback href is also clean
             const cleanHash = item.targetId.replace("#", "");
 
             return (
               <Link
                 key={item.targetId}
-                href={`/${id}#${cleanHash}`}
+                href={`${targetPath}#${cleanHash}`}
                 onClick={(e) => handleScroll(e, item.targetId)}
                 className="px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100"
               >
