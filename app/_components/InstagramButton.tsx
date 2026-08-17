@@ -1,15 +1,21 @@
 interface InstagramButtonProps {
   text?: string;
+  dotType?: boolean;
 }
 export default function InstagramButton({
   text = "Nuestro instagram",
+  dotType = true,
 }: InstagramButtonProps) {
   return (
     <a
       href="https://www.instagram.com/dleitebakery/"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex rounded-full w-15 h-15 items-center    gap-2     text-white font-semibold text-sm md:rounded-xl shadow-md bg-inst hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group  sm:w-auto md:w-auto  "
+      className={
+        dotType
+          ? `inline-flex rounded-full w-15 h-15 items-center    gap-2     text-white font-semibold text-sm md:rounded-xl shadow-md bg-inst hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group  sm:w-auto  md:pr-9 `
+          : `inline-flex h-15 items-center text-xs sm:text-sm   gap-2     text-white font-semibold  rounded-xl shadow-md bg-inst hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group  w-auto  sm:pr-9 pr-2`
+      }
     >
       {/* Icono de WhatsApp */}
 
@@ -24,7 +30,7 @@ export default function InstagramButton({
       </svg>
 
       {/* Texto del Botón */}
-      <span className="hidden md:inline">{text}</span>
+      <span className={dotType ? "hidden md:inline" : "inline"}>{text}</span>
     </a>
   );
 }

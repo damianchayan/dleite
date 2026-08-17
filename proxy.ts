@@ -10,11 +10,11 @@ const defaultLocale = "en"; // Inglés por defecto
 const pathTranslations: Record<string, Record<string, string>> = {
   es: {
     "/nosotros": "/about",
-    "/productos": "/products", // <-- Añadido
+    "/productos": "/products",
   },
   gl: {
     "/sobre-nos": "/about",
-    "/produtos": "/products", // <-- Añadido
+    "/produtos": "/products",
   },
 };
 
@@ -27,7 +27,7 @@ function getLocale(request: NextRequest): string {
   return matchLocale(languages, locales, defaultLocale);
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (

@@ -4,6 +4,7 @@ import Carousel from "../_components/Carousel";
 import { getDictionary } from "@/lib/getDictionaries";
 import { buildTartasData } from "./products/data/MenuData";
 import { getLocalizedRoute } from "@/config/routes";
+import Visitanos from "../_components/Visitanos";
 
 export default async function Page({
   params,
@@ -38,9 +39,13 @@ export default async function Page({
       </section>
 
       <div>Tartas</div>
+      <Button
+        to={`$(getLocalizedRoute(locale, "products"))#cakes`}
+        message="Ve todos nuestros productos"
+      />
 
-      <div>Visitanos</div>
-      <Button to="/products" message="Hola" />
+      <Visitanos id="visitanos" dict={dict} />
+
       <h1></h1>
     </>
   );

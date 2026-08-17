@@ -1,16 +1,16 @@
-// Definimos la interfaz para las Props en TypeScript
 interface WhatsappButtonProps {
-  phoneNumber?: string; // Opcional: por si quieres quemar uno por defecto
-  message?: string; // Opcional: mensaje personalizado
-  text?: string; // Opcional: el texto que muestra el botón
+  phoneNumber?: string;
+  message?: string;
+  text?: string;
+  dotType?: boolean;
 }
 
 export default function WhatsappButton({
-  phoneNumber = "34694311193", // Cambia esto por tu número por defecto
+  phoneNumber = "34694311193",
   message = "Hola, me gustaría realizar una consulta.",
   text = "Contactar por WhatsApp",
+  dotType = true,
 }: WhatsappButtonProps) {
-  // Codificación segura de la URL
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -18,7 +18,11 @@ export default function WhatsappButton({
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center justify-center  rounded-full w-15 h-15 gap-2  bg-[#25D366] text-white font-semibold text-sm md:rounded-xl shadow-md hover:bg-[#20ba5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 md:px-2 group  sm:w-auto "
+      className={
+        dotType
+          ? "inline-flex items-center justify-center  rounded-full w-15 h-15 gap-2  bg-[#25D366] text-white font-semibold text-sm md:rounded-xl shadow-md hover:bg-[#20ba5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 sm:px-2 group  sm:w-auto "
+          : "inline-flex items-center h-15 gap-2  bg-[#25D366] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-md hover:bg-[#20ba5a] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 px-2 group  w-auto"
+      }
     >
       {/* Icono de WhatsApp */}
 
@@ -33,7 +37,7 @@ export default function WhatsappButton({
       </svg>
 
       {/* Texto del Botón */}
-      <span className="hidden md:inline">{text}</span>
+      <span className={dotType ? "hidden md:inline" : "inline"}>{text}</span>
     </a>
   );
 }
