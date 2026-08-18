@@ -9,7 +9,7 @@ interface InfoRootProps {
 function InfoRoot({ children, className = "" }: InfoRootProps) {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-8 w-full max-w-6xl mx-auto bg-white dark:bg-zinc-900 p-6 md:p-10 rounded-2xlborder ${className}`}
+      className={`flex flex-col md:flex-row gap-8 w-full max-w-6xl mx-auto bg-white dark:bg-white  p-6 md:p-10 rounded-2xlborder ${className}`}
     >
       {children}
     </div>
@@ -39,7 +39,7 @@ function InfoTitle({ children }: { children: ReactNode }) {
 // 4. Dirección con icono
 function InfoAddress({ children }: { children: ReactNode }) {
   return (
-    <div className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+    <div className="flex items-start gap-3 text-gray-700 ">
       <svg
         className="w-6 h-6 text-dleite shrink-0 mt-0.5"
         fill="none"
@@ -67,7 +67,7 @@ function InfoAddress({ children }: { children: ReactNode }) {
 // 5. Teléfono con icono
 function InfoPhone({ children }: { children: ReactNode }) {
   return (
-    <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+    <div className="flex items-center gap-3 text-gray-700 ">
       <svg
         className="w-6 h-6 text-dleite shrink-0"
         fill="none"

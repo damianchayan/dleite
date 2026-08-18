@@ -28,10 +28,10 @@ export default function Carousel({ items, titleSection }: CardCarouselProps) {
   };
 
   return (
-    <div className="w-full py-8 bg-white dark:bg-neutral-700">
+    <div className="w-full py-8 bg-white dark:bg-white">
       {/* Título centrado (o a la izquierda si lo prefieres) */}
       {titleSection && (
-        <h2 className="text-3xl font-bold text-dtext mb-6 px-6 md:px-12 text-center md:text-left">
+        <h2 className="text-3xl font-bold text-dtext mb-6  xl:px-48  md:px-24 px-12  text-center md:text-left">
           {titleSection}
         </h2>
       )}
@@ -62,7 +62,7 @@ export default function Carousel({ items, titleSection }: CardCarouselProps) {
         {/* Carrusel */}
         <ul
           ref={carouselRef}
-          className="flex overflow-x-auto gap-6 px-15 md:px-12 pb-6 pt-2 snap-x snap-mandatory scrollbar-none scrollbar-thumb-dleite scrollbar-track-gray-100"
+          className="flex overflow-x-auto gap-6 px-15 md:px-12 pb-6 pt-2 snap-x snap-mandatory scrollbar-none scrollbar-thumb-dleite"
         >
           {items.map((item, index) => (
             <div key={index} className="snap-center shrink-0 w-70 md:w-[320px]">

@@ -5,6 +5,7 @@ import { getDictionary } from "@/lib/getDictionaries";
 import { buildTartasData } from "./products/data/MenuData";
 import { getLocalizedRoute } from "@/config/routes";
 import Visitanos from "../_components/Visitanos";
+import Tarta from "../_components/Tarta";
 
 export default async function Page({
   params,
@@ -27,24 +28,24 @@ export default async function Page({
           className="object-cover  -z-20 "
         ></Image>
       </div>
-      <div className=" flex min-h-15  lg:text-5xl md:text-3xl  text-2xl font-bold justify-center items-center  w-full  bg-dleite text-dtext  shadow-2xl tracking-wider italic ">
-        Donde todo esta muuuy rico
+      <div className=" flex min-h-15  lg:text-5xl md:text-3xl  text-2xl font-bold justify-center items-center  w-full  bg-dleite text-dtext  shadow-2xl tracking-wider italic z-10 ">
+        {dict.UI.slogan}
       </div>
-      <section id="carousel" className="flex flex-col items-center ">
-        <Carousel titleSection="Nuestros Productos" items={itemsParaCarrusel} />
+      <section id={dict.UI.sliderId} className="flex flex-col items-center">
+        <Carousel
+          titleSection={dict.UI.sliderTitle}
+          items={itemsParaCarrusel}
+        />
         <Button
           to={getLocalizedRoute(locale, "products")}
-          message="Ve todos nuestros productos"
+          message={dict.UI.sliderButton}
+          className="bg-dleite border-2 border-dtext "
         />
       </section>
 
-      <div>Tartas</div>
-      <Button
-        to={`$(getLocalizedRoute(locale, "products"))#cakes`}
-        message="Ve todos nuestros productos"
-      />
+      <Tarta id={dict.UI.cakeId} dict={dict} locale={locale} />
 
-      <Visitanos id="visitanos" dict={dict} />
+      <Visitanos id={dict.UI.visitUsId} dict={dict} />
 
       <h1></h1>
     </>

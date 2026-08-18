@@ -10,7 +10,20 @@
     "whatsapp": "Contactar por WhatsApp",
     "cookie": "Usamos cookies para mellorar a túa experiencia de usuario",
     "accept": "Aceptar",
-    "decline": "Rechazar"
+    "decline": "Rechazar",
+    "slogan": "Onde todo esta moooooi bo",
+    "sliderId": "carrusel",
+    "sliderTitle": "Os nosos produtos",
+    "sliderButton": "Todos os productos",
+    "cakeId": "tarta",
+    "cakeTitle": "Temos tartas.",
+    "cakeDescription": "Temos tartas clásicas e persoalizadas para todo tipo de ocasións. Contacta con nos para mais información.",
+    "cakeButton": "Mira as nosas tartas",
+    "visitUsId": "visita-nos",
+    "visitUsTitle": "Visitanos",
+    "adress": "Rúa dos Ferreiros, 6",
+    "adressExtras": "36002, Pontevedra",
+    "number": "694311193"
   },
   "Schedule": {
     "title": "Os Nosos Horarios",

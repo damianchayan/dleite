@@ -14,11 +14,11 @@ export default function Visitanos({ id, dict }: VisitanosProps) {
     <section id={id} className="xl:px-48  md:px-24 px-12 ">
       <Info>
         <Info.Details>
-          <Info.Title>{id.toUpperCase()}</Info.Title>
+          <Info.Title>{dict.UI.visitUsTitle}</Info.Title>
           <Info.Address>
-            Something Something <br /> somethin
+            {dict.UI.adress} <br /> {dict.UI.adressExtras}
           </Info.Address>
-          <Info.Phone>+34 numbernumber</Info.Phone>
+          <Info.Phone>+34 {dict.UI.number}</Info.Phone>
           <Info.Actions>
             <InstagramButton dotType={false} text={dict.UI.instagram} />
             <WhatsappButton dotType={false} text={dict.UI.whatsapp} />

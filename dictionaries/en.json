@@ -10,7 +10,20 @@
     "whatsapp": "Contact via WhatsApp",
     "cookie": "We use cookies to improve your experience.",
     "accept": "Accept",
-    "decline": "Decline"
+    "decline": "Decline",
+    "slogan": "Everything is moooolicious!",
+    "sliderId": "carousel",
+    "sliderTitle": "Our products",
+    "sliderButton": "All our products",
+    "cakeId": "cake",
+    "cakeTitle": "We've got cake.",
+    "cakeDescription": "We have classic and personalized cakes available for every occasion. Contact us for more information.",
+    "cakeButton": "Our cakes",
+    "visitUsId": "visit-us",
+    "visitUsTitle": "Visit us",
+    "adress": "Rúa dos Ferreiros, 6",
+    "adressExtras": "36002, Pontevedra",
+    "number": "694311193"
   },
   "Schedule": {
     "title": "Our Hours",

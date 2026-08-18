@@ -22,11 +22,7 @@ function CardTitle({ children }: { children: ReactNode }) {
 
 // 3. Subcomponente para la Descripción
 function CardDescription({ children }: { children: ReactNode }) {
-  return (
-    <h3 className="text-gray-950 dark:text-gray-300 px-4 text-sm">
-      {children}
-    </h3>
-  );
+  return <h3 className="text-gray-700   px-4 text-sm">{children}</h3>;
 }
 
 // 4. Subcomponente para el Precio
