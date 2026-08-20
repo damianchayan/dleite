@@ -207,5 +207,10 @@
         }
       }
     }
+  },
+  "SEO": {
+    "title": "DLeite Bakery | Tartas Artesanales en Pontevedra",
+    "description": "Donde todo está muuuy rico. Descubre nuestras tartas de queso súper cremosas, bizcochos y dulces artesanales. Haz tu encargo hoy.",
+    "imageAlt": "Tarta de queso artesanal decorada con fresas de DLeite Bakery"
   }
 }

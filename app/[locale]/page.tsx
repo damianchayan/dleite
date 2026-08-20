@@ -28,10 +28,14 @@ export default async function Page({
           className="object-cover  -z-20 "
         ></Image>
       </div>
-      <div className=" flex min-h-15  lg:text-5xl md:text-3xl  text-2xl font-bold justify-center items-center  w-full  bg-dleite text-dtext  shadow-2xl tracking-wider italic z-10 ">
+      <h1 className=" flex min-h-15  lg:text-5xl md:text-3xl  text-2xl font-bold justify-center items-center  w-full  bg-dleite text-dtext  shadow-2xl tracking-wider italic z-10 ">
         {dict.UI.slogan}
-      </div>
-      <section id={dict.UI.sliderId} className="flex flex-col items-center">
+      </h1>
+      <section
+        id={dict.UI.sliderId}
+        aria-label={dict.UI.sliderTitle}
+        className="flex flex-col items-center"
+      >
         <Carousel
           titleSection={dict.UI.sliderTitle}
           items={itemsParaCarrusel}
@@ -46,8 +50,6 @@ export default async function Page({
       <Tarta id={dict.UI.cakeId} dict={dict} locale={locale} />
 
       <Visitanos id={dict.UI.visitUsId} dict={dict} />
-
-      <h1></h1>
     </>
   );
 }

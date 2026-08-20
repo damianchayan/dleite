@@ -11,7 +11,11 @@ interface VisitanosProps {
 
 export default function Visitanos({ id, dict }: VisitanosProps) {
   return (
-    <section id={id} className="xl:px-48  md:px-24 px-12 ">
+    <section
+      id={id}
+      aria-label={dict.UI.visitUsTitle}
+      className="xl:px-48  md:px-24 px-12 "
+    >
       <Info>
         <Info.Details>
           <Info.Title>{dict.UI.visitUsTitle}</Info.Title>

@@ -10,19 +10,24 @@ interface TartaProps {
 }
 
 export default function Tarta({ id, locale, dict }: TartaProps) {
+  const titleId = `${id}-title`;
   return (
     <section
       id={id}
+      aria-labelledby={titleId}
       className="bg-dleite  flex  xl:px-48  md:px-24 px-12 flex-col py-10 md:flex-row md:gap-8 h-fit w-full mt-10 md:items-start"
     >
       <div className=" md:w-1/2 m-10 flex gap-4 flex-col ">
-        <h2 className="text-3xl  font-bold text-center text-white tracking-wide">
+        <h2
+          id={titleId}
+          className="text-3xl  font-bold text-center text-white tracking-wide"
+        >
           {dict.UI.cakeTitle}
         </h2>
 
-        <h3 className="text-lg italic text-center text-gray-400">
+        <p className="text-lg italic text-center text-gray-400">
           {dict.UI.cakeDescription}
-        </h3>
+        </p>
         <Button
           to={getLocalizedRoute(locale, "products")}
           message={dict.UI.cakeButton}

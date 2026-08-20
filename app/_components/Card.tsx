@@ -17,18 +17,18 @@ function CardRoot({ children, className = "" }: CardRootProps) {
 
 // 2. Subcomponente para el Título
 function CardTitle({ children }: { children: ReactNode }) {
-  return <h1 className="text-xl font-semibold text-dtext py-3">{children}</h1>;
+  return <h3 className="text-xl font-semibold text-dtext py-3">{children}</h3>;
 }
 
 // 3. Subcomponente para la Descripción
 function CardDescription({ children }: { children: ReactNode }) {
-  return <h3 className="text-gray-700   px-4 text-sm">{children}</h3>;
+  return <p className="text-gray-700   px-4 text-sm">{children}</p>;
 }
 
 // 4. Subcomponente para el Precio
 function CardPrice({ children }: { children: ReactNode }) {
   return (
-    <h2 className="font-extrabold dark:text-white p-3 text-lg">{children}</h2>
+    <p className="font-extrabold dark:text-gray-950 p-3 text-lg">{children}</p>
   );
 }
 
