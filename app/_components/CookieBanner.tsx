@@ -30,7 +30,7 @@ export default function CookieBanner({ dict }: CookieBannerProps) {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed justify-self-center md:mx-2 md:justify-self-start md:w-lg md:bottom-8 bottom-5  w-md shadow-2xl rounded-2xl bg-neutral-600 text-dtext p-4 flex justify-between items-center z-100">
+    <div className="fixed justify-self-center mx-2 md:mx-2 md:justify-self-start h-35 md:w-lg md:bottom-8 bottom-2  w-fit shadow-2xl rounded-2xl bg-neutral-600 text-dtext p-4 flex justify-between items-center z-100">
       <p>{dict.UI.cookie}</p>
       <div className="flex gap-2">
         <button
