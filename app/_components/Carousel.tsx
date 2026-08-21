@@ -28,7 +28,7 @@ export default function Carousel({ items, titleSection }: CardCarouselProps) {
   };
 
   return (
-    <div className="w-full py-8 bg-white dark:bg-white">
+    <div className="w-full py-8">
       {/* Título centrado (o a la izquierda si lo prefieres) */}
       {titleSection && (
         <h2 className="text-3xl font-bold text-dtext mb-6  xl:px-48  md:px-24 px-12  text-center md:text-left">

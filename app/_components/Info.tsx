@@ -9,7 +9,7 @@ interface InfoRootProps {
 function InfoRoot({ children, className = "" }: InfoRootProps) {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-8 w-full max-w-6xl mx-auto bg-white dark:bg-white  p-6 md:p-10 rounded-2xlborder ${className}`}
+      className={`flex flex-col md:flex-row gap-8 w-full max-w-6xl mx-auto   p-6 md:p-10 rounded-2xlborder ${className}`}
     >
       {children}
     </div>
