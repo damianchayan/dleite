@@ -42,7 +42,7 @@ export async function generateMetadata({
       siteName: "DLeite Bakery",
       images: [
         {
-          url: "/tarta3.jpg",
+          url: "/tartaMini.jpg",
           width: 1200,
           height: 630,
           alt: dict.SEO.imageAlt,

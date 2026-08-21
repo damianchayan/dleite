@@ -6,6 +6,7 @@ import { buildTartasData } from "./products/data/MenuData";
 import { getLocalizedRoute } from "@/config/routes";
 import Visitanos from "../_components/Visitanos";
 import Tarta from "../_components/Tarta";
+import BgImage from "../../public/tarta3.jpg";
 
 export default async function Page({
   params,
@@ -21,11 +22,13 @@ export default async function Page({
       <div className="min-h-11/12  relative ">
         <Image
           loading="eager"
-          src={"/tarta3.jpg"}
+          src={BgImage}
           alt="Full screen background"
           fill
           sizes="100vw"
           className="object-cover  -z-20 "
+          placeholder="blur"
+          priority
         ></Image>
       </div>
       <h1 className=" flex min-h-15  lg:text-5xl md:text-3xl  text-2xl font-bold justify-center items-center  w-full  bg-dleite text-dtext  shadow-2xl tracking-wider italic z-10 ">
