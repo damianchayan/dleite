@@ -65,13 +65,14 @@ export default function Carousel({ items, titleSection }: CardCarouselProps) {
           className="flex overflow-x-auto gap-6 px-15 md:px-12 pb-6 pt-2 snap-x snap-mandatory scrollbar-none scrollbar-thumb-dleite"
         >
           {items.map((item, index) => (
-            <div key={index} className="snap-center shrink-0 w-70 md:w-[320px]">
-              <Card className="border-0 pb-5 shadow-none bg-dleite/0 h-full">
-                <Card.Image src="/cinamon.jpg" alt={item.name} />
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Description>{item.desc}</Card.Description>
-              </Card>
-            </div>
+            <Card
+              key={index}
+              className="snap-center shrink-0 w-70 md:w-[320px] border-0 pb-5 shadow-none bg-dleite/0 h-full"
+            >
+              <Card.Image src="/cinamon.jpg" alt={item.name} />
+              <Card.Title>{item.name}</Card.Title>
+              <Card.Description>{item.desc}</Card.Description>
+            </Card>
           ))}
         </ul>
 

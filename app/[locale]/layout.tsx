@@ -38,7 +38,7 @@ export async function generateMetadata({
     openGraph: {
       title: dict.SEO.title,
       description: dict.SEO.description,
-      url: `https://dleitebakery.com/${locale}`,
+      url: `https://dleite.vercel.app/${locale}`,
       siteName: "DLeite Bakery",
       images: [
         {
@@ -76,7 +76,6 @@ export default async function RootLayout({
         <Header dict={dict} locale={locale} />
         <Analytics />
         <main className="relative flex-1     justify-center items-center overflow-y-auto w-screen h-screen">
-          {/* className=" flex flex-col justify-center items-center" */}
           {children}
           <CookieBanner dict={dict} />
           <Socials dict={dict} />
