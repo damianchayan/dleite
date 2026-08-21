@@ -35,6 +35,11 @@ export async function generateMetadata({
   return {
     title: dict.SEO.title,
     description: dict.SEO.description,
+    robots: {
+      index: false,
+      follow: false,
+      nocache: true,
+    },
     openGraph: {
       title: dict.SEO.title,
       description: dict.SEO.description,
